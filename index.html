@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width,
+          initial-scale=1.0,
+          maximum-scale=1.0,
+          user-scalable=no">
+
+    <title>Happy Birthday Brother ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="stars"></div>
+    <div class="particles"></div>
+
+    <!-- Birthday Song -->
+    <audio id="birthdaySong" loop preload="auto" autoplay>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Button -->
+    <button id="musicBtn" onclick="toggleMusic()">
+        🎵 Music
+    </button>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section id="intro" class="screen active">
+
+        <div class="intro-content">
+
+            <div class="sparkle">
+                ✨
+            </div>
+
+            <p class="small-text">
+                A SPECIAL DAY FOR A SPECIAL PERSON
+            </p>
+
+            <h1>
+                Happy Birthday
+                <span>Brother</span>
+                ❤️
+            </h1>
+
+            <p class="subtitle">
+                Something special is waiting for you...
+            </p>
+
+            <button class="main-btn" onclick="startBirthday()">
+
+                🎁 Start Surprise
+
+            </button>
+
+            <p id="musicHint">
+                🎵 Music is loading...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CAKE ================= -->
+
+    <section id="cakeScreen" class="screen">
+
+        <div class="section-title">
+
+            <p>
+                MAKE A WISH ✨
+            </p>
+
+            <h2>
+                Blow The Candles 🕯️
+            </h2>
+
+        </div>
+
+
+        <div class="cake-scene">
+
+            <!-- Candle 1 -->
+            <div class="candle candle1">
+                <div class="flame"></div>
+            </div>
+
+            <!-- Candle 2 -->
+            <div class="candle candle2">
+                <div class="flame"></div>
+            </div>
+
+            <!-- Candle 3 -->
+            <div class="candle candle3">
+                <div class="flame"></div>
+            </div>
+
+
+            <!-- Cake -->
+            <div class="cake">
+
+                <div class="cream-top"></div>
+
+                <div class="cake-top">
+
+                    <div class="cherry"></div>
+
+                    <div class="cherry c2"></div>
+
+                    <div class="cherry c3"></div>
+
+                </div>
+
+
+                <div class="cake-middle">
+
+                    <div class="cream-line"></div>
+
+                </div>
+
+
+                <div class="cake-bottom">
+
+                    <div class="cream-line"></div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Plate -->
+            <div class="plate"></div>
+
+        </div>
+
+
+        <button id="blowBtn" class="main-btn" onclick="blowCandles()">
+
+            🕯️ Blow Candles
+
+        </button>
+
+    </section>
+
+
+    <!-- ================= BIRTHDAY ================= -->
+
+    <section id="birthdayScreen" class="screen">
+
+        <div class="birthday-content">
+
+            <div class="crown">
+                👑
+            </div>
+
+            <h1 class="birthday-title">
+
+                HAPPY
+                <br>
+
+                <span>
+                    BIRTHDAY
+                </span>
+
+            </h1>
+
+            <h2>
+                BROTHER ❤️
+            </h2>
+
+            <div class="divider"></div>
+
+            <p>
+                Today is all about celebrating
+                an amazing brother and an even
+                better friend.
+            </p>
+
+            <button class="main-btn" onclick="showMessage()">
+
+                💌 Read My Message
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MESSAGE ================= -->
+
+    <section id="messageScreen" class="screen">
+
+        <div class="message-card">
+
+            <div class="card-icon">
+                ❤️
+            </div>
+
+            <h2>
+                For My Brother
+            </h2>
+
+            <p>
+                You are not just my brother,
+                you are my best friend, my support
+                and one of the most important people
+                in my life.
+            </p>
+
+            <p>
+                Thank you for all the laughs,
+                memories and crazy moments
+                we have shared together.
+            </p>
+
+            <p>
+                May your life always be filled with
+                happiness, success and endless smiles.
+            </p>
+
+            <h3>
+                Love You Brother! ❤️
+            </h3>
+
+            <button class="main-btn" onclick="openGift()">
+
+                🎁 Open Your Surprise
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GIFT ================= -->
+
+    <section id="giftScreen" class="screen">
+
+        <div class="gift-title">
+
+            <p>
+                ONE LAST SURPRISE...
+            </p>
+
+            <h2>
+                Open Your Gift 🎁
+            </h2>
+
+        </div>
+
+
+        <div class="gift-container" onclick="openGiftBox()">
+
+            <div class="gift-lid">
+
+                <div class="ribbon"></div>
+
+            </div>
+
+
+            <div class="gift-box">
+
+                <div class="vertical-ribbon"></div>
+
+                <div class="horizontal-ribbon"></div>
+
+            </div>
+
+        </div>
+
+
+        <p class="tap-text">
+            TAP THE GIFT 🎁
+        </p>
+
+    </section>
+
+
+    <!-- ================= FINAL ================= -->
+
+    <section id="finalScreen" class="screen">
+
+        <div class="hearts"></div>
+
+        <div class="final-content">
+
+            <div class="final-crown">
+                👑
+            </div>
+
+            <h1>
+                HAPPY BIRTHDAY
+            </h1>
+
+            <h2>
+                BROTHER ❤️
+            </h2>
+
+            <div class="big-heart">
+                ❤️
+            </div>
+
+            <p>
+                Keep smiling.<br>
+                Keep shining.<br>
+                Keep being awesome! ✨
+            </p>
+
+            <div class="final-message">
+                🎂 Here's to another amazing year! 🎉
+            </div>
+
+            <button class="main-btn" onclick="restart()">
+
+                🔄 Watch Again
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Confetti -->
+    <div id="confetti"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
